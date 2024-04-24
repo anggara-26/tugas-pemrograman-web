@@ -1,0 +1,141 @@
+/* Nunito Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+/* Top Nabar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #00c2cb;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.top-navbar-logo {
+  width: 235px;
+  height: 47px;
+  margin-left: 64px;
+}
+
+.top-navbar-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 64px;
+}
+
+.top-navbar-link-container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.top-navbar-link-container a.link-active {
+  font-weight: 700;
+  border-bottom: #fff 1px solid;
+}
+
+.top-navbar-link-container a:hover {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+}
+
+/* Home Header */
+.home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 102px;
+  padding-top: 144px;
+  color: #080808;
+  text-align: center;
+  width: 100%;
+}
+
+.home-header-title {
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.home-header-title div {
+  z-index: -1;
+}
+
+.blue-circle-1 {
+  position: absolute;
+  top: -80px;
+  left: -64px;
+  width: 192px;
+  height: 192px;
+  background-color: #d1e4f6;
+  border-radius: 50%;
+}
+
+.blue-circle-2 {
+  position: absolute;
+  bottom: -144px;
+  right: 20px;
+  width: 144px;
+  height: 144px;
+  background-color: #d1e4f6;
+  border-radius: 50%;
+}
+
+.yellow-circle-1 {
+  position: absolute;
+  bottom: -96px;
+  left: 208px;
+  width: 112px;
+  height: 112px;
+  background-color: #f3f6d1;
+  border-radius: 50%;
+}
+
+.yellow-circle-2 {
+  position: absolute;
+  top: -144px;
+  right: 176px;
+  width: 160px;
+  height: 160px;
+  background-color: #f3f6d1;
+  border-radius: 50%;
+}
+
+/* Why Us */
+.whyus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 128px;
+  margin-top: 64px;
+  padding: 64px 0px;
+}
+
+.whyus-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.whyus-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.whyus img {
+  width: 398px;
+}
