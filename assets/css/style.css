@@ -8,6 +8,8 @@ body {
   font-family: "Nunito Sans", sans-serif;
   transition: all 0.3s;
   color: #080808;
+  --primary: #00c2cb;
+  --secondary: #ffbf23;
 }
 
 h1,
@@ -35,10 +37,11 @@ p {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: #00c2cb;
+  background-color: var(--primary, #00c2cb);
   display: flex;
   justify-content: space-between;
   padding: 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .top-navbar-logo {
@@ -245,7 +248,7 @@ p {
 .ourmentor {
   margin-top: -20px;
   padding: 0px 144px;
-  background-color: #00c2cb;
+  background-color: var(--primary, #00c2cb);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
@@ -327,25 +330,102 @@ p {
 
 .testimoni-card-container {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  margin-top: 32px;
+  justify-content: space-around;
+  gap: 64px;
+  margin-top: 64px;
+  padding: 0 64px;
 }
 
 .testimoni-card {
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border: black 1px solid;
+  border-radius: 12px;
+  border: 1px solid black;
   width: 100%;
   max-width: 280px;
 }
 
 .testimoni-card-header {
   display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 12px;
   gap: 8px;
-  background-color: #ffbf23;
+  background-color: var(--secondary, #ffbf23);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1px solid black;
 }
 
-.testimoni-card-header div {
+.testimoni-card-header .dot {
+  width: 6px;
+  height: 6px;
   background-color: black;
+  border-radius: 50%;
+}
+
+.testimoni-card-desc {
+  height: 176px;
+  padding: 40px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.testimoni-card-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 12px 12px;
+  background-color: var(--secondary, #ffbf23);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top: 1px solid black;
+}
+
+.testimoni-card-footer p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.testimoni-card-footer img {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  bottom: -28px;
+  left: -28px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary, #00c2cb);
+  padding: 24px 32px;
+  margin-top: 128px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-social-media {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: var(--secondary, #ffbf23);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.footer-social-media:hover {
+  transform: translateY(-4px);
+}
+
+.footer-social-media img {
+  width: 100%;
 }
